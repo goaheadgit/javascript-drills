@@ -1,0 +1,20 @@
+// You are given an array (which will have a length of at least 3, but could be very large) containing integers. The array is either entirely comprised of odd integers or entirely comprised of even integers except for a single integer N. Write a function that takes the array as an argument and returns this “outlier” N.
+function findingOutlier(integer) {
+    let odds = []
+    let evens = []
+    for(let i = 0; i < integer.length; i++){
+      let num = integer[i]
+      if(num % 2 === 0){
+        evens.push(num)
+      }    else{
+        odds.push(num)
+      }
+    }
+      if(evens.length === 1){
+        return evens[0]
+      } else{
+        return odds[0]
+      }
+  }
+  
+  console.log(findingOutlier([2, 4, 0, 100, 4, 11, 2602, 36]))
