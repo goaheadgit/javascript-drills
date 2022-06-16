@@ -1,3 +1,11 @@
+// You need to handle the following mathematical operations:
+//     Addition
+//     Subtraction
+//     Multiplication
+//     Division
+//     Square root
+// We’ve provided some code that allows you to access the numbers and the math symbol that the user provided on the command line. Review the code carefully in calc.js. Research any syntax that looks unfamiliar to you.
+
 const readline = require('readline');
 
 const reader = readline.createInterface({
